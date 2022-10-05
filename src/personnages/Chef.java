@@ -6,10 +6,9 @@ public class Chef {
 	private int effetPotion = 1;
 	private Village village;
 	
-	public Chef(String nom, int force, int effetPotion, Village village) {
+	public Chef(String nom, int force, Village village) {
 		this.nom = nom;
 		this.force = force;
-		this.effetPotion = effetPotion;
 		this.village = village;
 	}
 	
@@ -19,7 +18,7 @@ public class Chef {
 	
 	
 	public void parler(String texte) {
-		System.out.println(prendreParole(" \" " + texte + " \" ") );
+		System.out.println(prendreParole() + " \" " + texte + " \" ");
 	}
 	
 	private String prendreParole() {
