@@ -29,7 +29,7 @@ public class Village {
 	}
 	
 	public void afficherVillageois() {
-		System.out.println("Dans le village du chef " + chef + "vivent les légendaires gaulois: ");
+		System.out.println("Dans le village du chef " + chef.getNom() + " vivent les lÃ©gendaires gaulois: ");
 		for(int i=0; i<nbVillageois;i++) {
 			
 			System.out.println("- " + villageois[i]);
@@ -37,13 +37,13 @@ public class Village {
 	}
 	public static void main(String[] args) {
 		Village village;
-		village = new Village("Village des Irréductibles", 30);
+		village = new Village("Village des IrrÃ©ductibles", 30);
 		
 		//Gaulois gaulois = village.trouverHabitant(30);
 		//Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 30
 		//at personnages.Village.trouverHabitant(Village.java:28)
 		//at personnages.Village.main(Village.java:34)
-		//parce que le gaulois numéro 30 n'est pas clairement définit
+		//parce que le gaulois numï¿½ro 30 n'est pas clairement dï¿½finit
 		
 		Chef abraracourcix;
 		abraracourcix = new Chef("Abraracourcix", 6, village);
