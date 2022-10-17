@@ -36,7 +36,7 @@ public class Druide {
 		}
 
 		if (this.forcePotion > 7) {
-			this.parler("J'ai préparé une super potion de force");
+			this.parler("J'ai préparé une super potion de force "+ this.forcePotion);
 		} else {
 			this.parler(
 					"Je n'ai pas trouvé tous les ingrédients, ma potion est seulement de force " + this.forcePotion);

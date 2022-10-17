@@ -35,17 +35,16 @@ public class Gaulois {
 
 	public void frapper(Romain romain) {
 		System.out.println(nom + " envoie un grand coup dans la mâchoire de " + romain.getNom());
-		Equipement trophees[] = romain.recevoirCoup((force / 3) * effetPotion);
+		trophees =  romain.recevoirCoup((force / 3) * effetPotion);
 		for (int i = 0; trophees != null && i < trophees.length; i++, nb_trophees++) {
 			this.trophees[nb_trophees] = trophees[i];
 		}
-		return;
 	}
 
-//	@Override
-//	public String toString() {
-//		return "Gaulois [nom=" + nom + ", force=" + force + ", effetPotion=" + effetPotion + "]";
-//	}
+	@Override
+	public String toString() {
+		return "Gaulois [nom=" + nom + ", force=" + force + ", effetPotion=" + effetPotion + "]";
+	}
 
 	public void boirePotion(int forcePotion) {
 		this.effetPotion = forcePotion;

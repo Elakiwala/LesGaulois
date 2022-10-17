@@ -1,6 +1,7 @@
 package Histoire;
 
 import personnages.Druide;
+import personnages.Equipement;
 import personnages.Gaulois;
 import personnages.Romain;
 
@@ -19,8 +20,12 @@ public class Scenario {
 		obelix.parler("Par Bélénos, ce n'est pas juste !");
 		panoramix.booster(asterix);
 
+		minus.sEquiper(Equipement.BOUCLIER);
+		minus.sEquiper(Equipement.CASQUE);
+		minus.sEquiper(Equipement.CASQUE);
 		asterix.parler("Bonjour");
 		minus.parler("UN GAU... UN GAUGAU...");
+
 
 		asterix.frapper(minus);
 		asterix.frapper(minus);
