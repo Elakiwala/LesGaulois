@@ -11,6 +11,9 @@ public class Village {
 		villageois = new Gaulois[nbVillageoisMax];
 	}
 
+	public Village(String nom) {
+		this.nom = nom;
+	}
 	public void setChef(Chef chef) {
 		this.chef = chef;
 	}
